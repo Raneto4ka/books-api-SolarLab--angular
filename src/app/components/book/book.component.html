@@ -1,0 +1,15 @@
+<div class="book">
+    <h2>{{ book.title }}</h2>
+    <p class="book-author">{{ book.author }}</p>
+
+    <div class="img-wrapper">
+        <img [src]="book.image" [alt]="book.title">
+        <p class="genre-label">{{ book.genre }}</p>
+    </div>
+
+    <button mat-raised-button (click)="isVisible = !isVisible">
+        {{ isVisible ? 'Hide' : 'Show' }} description
+    </button>
+
+    <p *ngIf="isVisible">{{ book.description }}</p>
+</div>

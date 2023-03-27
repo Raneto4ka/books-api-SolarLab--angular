@@ -1,0 +1,18 @@
+.catalog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+.book-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    margin: 16px;
+    flex-basis: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0 12px 24px;
+    border-radius: 8px;
+}
